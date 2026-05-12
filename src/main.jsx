@@ -5,6 +5,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import MainLayouts from './MainLayouts/MainLayouts';
 import HomePage from './HomePage/HomePage';
 import Friends from './Components/Navbar/Friends/Friends';
+import Timeline from './Timeline/Timeline';
+import Analysis from './Analysis/Analysis';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
       {
         path: "/friends",
         element: <Friends/>
+      },
+      {
+        path: "/timeline",
+        element: <Timeline/>
+      },
+      {
+        path: "/Analysis",
+        element: <Analysis/>
       }
     ]
   },
