@@ -9,6 +9,7 @@ import Timeline from './Timeline/Timeline';
 import Analysis from './Analysis/Analysis';
 import ErrorPage from './HomePage/Errorpage/ErrorPage';
 import FriendsDetails from './Components/Navbar/Friends/FriendsDetails';
+import { TimelineProvider } from './Timeline/TimelineContext';
 
 const router = createBrowserRouter([
   {
@@ -43,6 +44,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <TimelineProvider>
+      <RouterProvider router={router} />
+    </TimelineProvider>
   </StrictMode>,
 )

@@ -1,17 +1,19 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router';
+import { useTimeline } from '../../../Timeline/TimelineContext';
 import toast, { Toaster } from 'react-hot-toast';
 
 const FriendDetails = () => {
   const { id } = useParams();
   const friends = useLoaderData();
+  const { addActivity } = useTimeline();
 
   const expectedDetails = friends.find((friend) => friend.id == id);
 
   if (!expectedDetails) return <div className="p-10 text-center">Friend not found!</div>;
 
   const handleAction = (type) => {
-  
+    addActivity(expectedDetails.name, type);
     toast.success(`${type} with ${expectedDetails.name} added!`, {
       style: { background: '#2d4f43', color: '#fff' }
     });
