@@ -7,6 +7,7 @@ import HomePage from './HomePage/HomePage';
 import Friends from './Components/Navbar/Friends/Friends';
 import Timeline from './Timeline/Timeline';
 import Analysis from './Analysis/Analysis';
+import ErrorPage from './HomePage/Errorpage/ErrorPage';
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,8 @@ const router = createBrowserRouter([
         path: "/Analysis",
         element: <Analysis/>
       }
-    ]
+    ],
+    errorElement: <ErrorPage />
   },
 ]);
 
