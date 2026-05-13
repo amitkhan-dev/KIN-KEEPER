@@ -1,16 +1,32 @@
-# React + Vite
+# 🛡️ Keen-Keeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Keen-Keeper** is a smart relationship management application designed to help users maintain consistent connections with their friends and family. By tracking interaction history and setting communication goals, it ensures you never lose touch with the people who matter most.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
+[Insert Your Live Deployment Link Here]
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧐 About the Project
+In our busy lives, we often forget to check in on our friends. **Keen-Keeper** solves this by providing a visual dashboard of your social connections. It tracks how long it's been since your last contact, categorizes friends by urgency (Overdue, Almost Due, On-track), and allows you to log interactions like calls, texts, and video chats instantly.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Key Features
+
+-   **🎯 Smart Relationship Tracking:** Categorizes friends based on communication goals with dynamic status indicators (Overdue, Almost Due, On-track) and tracks "Days Since Contact" in real-time.
+-   **📜 Dynamic Interaction Timeline:** A centralized logging system that automatically records every Call, Text, or Video interaction from the Friend Details page, complete with dates and custom icons.
+-   **📊 Friendship Analytics:** Visualizes your interaction habits using a **Pie Chart** (Recharts), showing the distribution of calls, texts, and video chats to help you understand how you connect.
+-   **🔍 Advanced Timeline Filtering:** Allows users to filter their interaction history by type, making it easy to find specific past conversations.
+-   **📱 Fully Responsive & Modern UI:** Built with a "Mobile First" approach, ensuring a seamless experience across mobile, tablet, and desktop using Tailwind CSS and DaisyUI.
+
+
+## 🛠️ Technologies Used
+
+-   **Core:** React.js (Vite)
+-   **Routing:** React Router DOM (v7)
+-   **Styling:** Tailwind CSS & DaisyUI
+-   **State Management:** React Context API
+-   **Data Visualization:** Recharts
+-   **Notifications:** React Hot Toast
+-   **Icons:** Lucide React / React Icons
+-   **Deployment:**  Netlify
